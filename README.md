@@ -3,7 +3,7 @@
 Windows registry packs for security, privacy, performance, networking, and shell UX.
 
 **Author:** Gorstak  
-**Import:** right-click → *Merge*, or `reg import <file.reg>` (elevated for HKLM)
+**Import:** right-click -> *Merge*, or `reg import <file.reg>` (elevated for HKLM)
 
 > Review before applying. Many keys harden or lock down the system.  
 > Large dumps (`Immunity`, `Firewall`, `Certificates`, `AdBlock-Routes-Full`) can take time to import.
@@ -36,15 +36,15 @@ Windows registry packs for security, privacy, performance, networking, and shell
 
 ## Suggested apply order
 
-1. `Policies.reg` → `Security.reg` → `Privacy.reg`
-2. `Network.reg` → `Firewall.reg` → `IPSec.reg` (optional)
+1. `Policies.reg` -> `Security.reg` -> `Privacy.reg`
+2. `Network.reg` -> `Firewall.reg` -> `IPSec.reg` (optional)
 3. `Browsers.reg`
-4. `Performance.reg` → `UI.reg` → `Services.reg` → `Cleanup.reg`
+4. `Performance.reg` -> `UI.reg` -> `Services.reg` -> `Cleanup.reg`
 5. Optional: `Certificates.reg`, ad-block packs, `Immunity.reg`
 
 ### Conflicts to note
 
-- **AdBlock-PAC.reg** and **GeoBlock-PAC.reg** both set `AutoConfigURL` — use one, not both.
+- **AdBlock-PAC.reg** and **GeoBlock-PAC.reg** both set `AutoConfigURL` - use one, not both.
 - **Security.reg** merges several former hardening packs; later sections override earlier ones for the same value.
 
 ---
